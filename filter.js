@@ -50,3 +50,8 @@ console.log(completedTask);
 const words = ["sun", "elephant", "moon", "butterfly", "sky"];
 const longWords = words.filter(word => word.length > 4)
 console.log(longWords);
+
+//Remove Falsy Values
+const mixed = [0, "hello", false, 42, "", null, "world"];
+const origin = mixed.filter(mix => Boolean(mix))
+console.log(origin);
