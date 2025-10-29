@@ -55,3 +55,14 @@ console.log(longWords);
 const mixed = [0, "hello", false, 42, "", null, "world"];
 const origin = mixed.filter(mix => Boolean(mix))
 console.log(origin);
+
+//Filter by Nested Property
+
+const users = [
+    { name: "Asha", address: { city: "Dhaka" } },
+    { name: "Mina", address: { city: "Chittagong" } },
+    { name: "Rafi", address: { city: "Dhaka" } }
+];
+
+const dhakaUser = users.filter(user => user.address.city === "Dhaka")
+console.log(dhakaUser);
