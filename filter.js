@@ -11,3 +11,9 @@ const nums = [-3, 5, -7, 8, 0, 12, -1, 0];
 
 const positiveNumbers = nums.filter(num => num < 0);
 console.log(positiveNumbers);
+
+//Short Names Filter
+const names = ["Rafi", "Anika", "Tom", "Rahim", "Li"];
+
+const shortNames = names.filter(name => name.length < 4)
+console.log(shortNames);
