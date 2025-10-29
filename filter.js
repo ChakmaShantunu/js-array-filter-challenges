@@ -22,3 +22,15 @@ console.log(shortNames);
 const fruits = ["apple", "banana", "cherry", "avocado", "mango"];
 const startingLetter = fruits.filter(fruit => fruit.startsWith("a"))
 console.log(startingLetter);
+
+//Filter Adults (Age ≥ 18)
+
+const people = [
+    { name: "Riya", age: 17 },
+    { name: "Sakib", age: 20 },
+    { name: "Tania", age: 15 },
+    { name: "Rafi", age: 22 }
+];
+
+const adultPeople = people.filter(singlePeople => singlePeople.age >= 18)
+console.log(adultPeople);
