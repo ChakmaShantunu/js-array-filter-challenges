@@ -66,3 +66,13 @@ const users = [
 
 const dhakaUser = users.filter(user => user.address.city === "Dhaka")
 console.log(dhakaUser);
+
+//Filter Based on Multiple Conditions
+const products = [
+    { name: "Laptop", price: 80000, inStock: true },
+    { name: "Phone", price: 20000, inStock: false },
+    { name: "Tablet", price: 30000, inStock: true }
+];
+
+const stockProducts = products.filter(product => product.price > 25000 && product.inStock === true)
+console.log(stockProducts);
