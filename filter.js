@@ -45,3 +45,8 @@ const tasks = [
 
 const completedTask = tasks.filter(task => task.completed === true);
 console.log(completedTask);
+
+//Filter Long Words
+const words = ["sun", "elephant", "moon", "butterfly", "sky"];
+const longWords = words.filter(word => word.length > 4)
+console.log(longWords);
