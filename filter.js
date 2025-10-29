@@ -34,3 +34,14 @@ const people = [
 
 const adultPeople = people.filter(singlePeople => singlePeople.age >= 18)
 console.log(adultPeople);
+
+//Filter Completed Tasks
+
+const tasks = [
+    { title: "Learn JS", completed: true },
+    { title: "Watch TV", completed: false },
+    { title: "Do Homework", completed: true }
+];
+
+const completedTask = tasks.filter(task => task.completed === true);
+console.log(completedTask);
